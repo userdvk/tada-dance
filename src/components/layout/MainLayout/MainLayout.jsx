@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import MainContainer from "../MainContainer/MainContainer";
-import { LeftMenu } from "../../features/LeftMenu/leftMenu";
+import { LeftMenu } from "../../features/LeftMenu/LeftMenu";
 
 export default function MainLayout() {
   return (
