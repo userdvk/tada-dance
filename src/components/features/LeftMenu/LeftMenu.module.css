@@ -1,0 +1,64 @@
+@media (min-width: 765px) {
+  /* Боковое меню слева */
+  .leftMenu {
+    position: absolute;
+    top: 0;
+    left: 0; /* Прижимаем к левому краю */
+    width: 80px; /* Задаем фиксированную ширину меню (можно изменить) */
+    height: 100dvh; /* Растягиваем на всю высоту экрана */
+
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; /* Выстраиваем элементы вертикально */
+    justify-content: center; /* Центрируем элементы по вертикали (или используйте space-around/flex-start) */
+    align-items: center; /* Центрируем элементы по горизонтали внутри меню */
+
+    z-index: 100;
+    padding: 15px 0;
+
+    /* Добавим легкую тень справа, чтобы отделить меню от контента (по желанию) */
+    box-shadow: 1px 0 1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 765px) {
+  .leftMenu {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(
+      -50%
+    ); /* Сдвигает элемент на половину его ширины назад, центрируя его */
+    width: 100%;
+    max-width: 430px; /* Должно совпадать с максимальной шириной вашего контейнера телефона */
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+    padding: 15px 0 15px 0;
+  }
+}
+
+.menuItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  color: #000;
+  transition: all 0.25s ease;
+
+  /* Добавляем вертикальные отступы между кнопками */
+  margin-bottom: 15px;
+}
+
+/* Убираем отступ у последней кнопки, чтобы было ровно */
+.menuItem:last-child {
+  margin-bottom: 0;
+}
+
+.active {
+  background-color: #0b8fac;
+  color: #ffffff;
+}

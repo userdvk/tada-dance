@@ -1,0 +1,14 @@
+.MainContainer {
+  margin: 42px 42px 83px 42px;
+}
+
+@media (min-width: 765px) {
+  .MainContainer {
+    margin: 42px 42px 83px 102px;
+  }
+}
+@media (max-width: 765px) {
+  .MainContainer {
+    margin: 42px 42px 83px 42px;
+  }
+}
