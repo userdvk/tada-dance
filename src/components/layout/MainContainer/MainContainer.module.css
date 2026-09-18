@@ -2,12 +2,12 @@
   margin: 42px 42px 83px 42px;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 1032px) {
   .MainContainer {
-    margin: 42px 42px 83px 102px;
+    margin: 42px 42px 83px 125px;
   }
 }
-@media (max-width: 765px) {
+@media (max-width: 1032px) {
   .MainContainer {
     margin: 42px 42px 83px 42px;
   }

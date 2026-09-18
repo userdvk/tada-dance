@@ -1,13 +1,13 @@
 import cls from "./Search.module.css";
 
-export function Search({ setSerchQuery, mobile }) {
+export function Search({ setSerchQuery, desktop }) {
   const onChangeHandler = (e) => {
     e.preventDefault();
     setSerchQuery(e.target.value);
   };
 
   return (
-    <div className={`${mobile ? cls.wrapperMobile : cls.wrapper}`}>
+    <div className={`${desktop ? cls.wrapperDesktop : cls.wrapper}`}>
       <svg
         className={`${cls.icon}`}
         viewBox="0 0 24 24"

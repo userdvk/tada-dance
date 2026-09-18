@@ -1,0 +1,16 @@
+.wrapper img {
+  width: 100%;
+}
+
+@media (min-width: 1032px) {
+  .wrapper {
+    max-width: 600px;
+    margin: 32px auto;
+  }
+}
+
+@media (max-width: 1032px) {
+  .wrapperDesktop {
+    max-width: 100%;
+  }
+}

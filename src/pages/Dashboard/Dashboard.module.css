@@ -1,0 +1,21 @@
+.wrap {
+  display: flex;
+  gap: 30px;
+}
+
+.sidewrap {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1032px) {
+  .wrap {
+    flex-direction: column;
+    display: flex;
+  }
+}
+
+@media (min-width: 1032px) {
+  .wrap {
+    align-items: center;
+  }
+}

@@ -1,5 +1,5 @@
 .wrapper {
-  margin: 32px auto;
+  margin: 0 auto;
   display: flex;
   align-items: center; /* Центрируем элементы по вертикали */
   background-color: #f5f5f5; /* Светло-серый фон как на фото */
@@ -8,6 +8,8 @@
   width: 100%;
   max-width: 400px; /* Ограничиваем ширину */
   box-sizing: border-box;
+  height: 60px;
+  margin-top: 32px;
 }
 
 .wrapper input {
@@ -40,7 +42,7 @@
   color: #999;
 }
 
-.wrapperMobile {
+.wrapperDesktop {
   width: calc(100% - 32px);
 
   margin: 0 auto;
@@ -51,9 +53,10 @@
   padding: 12px 16px;
   max-width: 56%;
   box-sizing: border-box;
+  height: 60px;
 }
 
-.wrapperMobile input {
+.wrapperDesktop input {
   width: 376.55px;
   height: 40px;
   border: none; /* Убираем стандартную рамку */
@@ -65,14 +68,14 @@
   margin: 0 12px; /* Отступы от иконок */
 }
 
-@media (min-width: 765px) {
+@media (min-width: 1032px) {
   .wrapper {
     display: none;
   }
 }
 
-@media (max-width: 765px) {
-  .wrapperMobile {
+@media (max-width: 1032px) {
+  .wrapperDesktop {
     display: none;
   }
 }
