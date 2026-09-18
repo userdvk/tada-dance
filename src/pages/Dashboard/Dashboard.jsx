@@ -2,7 +2,7 @@ import RightSideCards from "../../components/features/RightSideCards/RightSideCa
 import { Slider } from "../../components/ui/Slider/Slider";
 import cls from "./Dashboard.module.css";
 import { CategoriesSlider } from "../../components/features/CategoriesSlider/CategoriesSlider";
-import ContentWrapper from "../../components/layout/ContentWrapper/ContentWrapper";
+import SectionHeader from "../../components/ui/SectionHeader/SectionHeader";
 import { useState } from "react";
 
 export default function Dashboard() {
@@ -28,12 +28,12 @@ export default function Dashboard() {
         </div>
       </main>
 
-      <ContentWrapper title="Categories">
+      <SectionHeader title="Categories">
         <CategoriesSlider
           setActiveCategory={setActiveCategory}
           activeCategory={activeCategory}
         />
-      </ContentWrapper>
+      </SectionHeader>
     </>
   );
 }

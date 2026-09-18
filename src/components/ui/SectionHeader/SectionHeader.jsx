@@ -1,5 +1,5 @@
-import cls from "./ContentWrapper.module.css";
-export default function ContentWrapper({ title, children }) {
+import cls from "./SectionHeader.module.css";
+export default function SectionHeader({ title, children }) {
   return (
     <>
       <div className={cls.doctorTitle}>
