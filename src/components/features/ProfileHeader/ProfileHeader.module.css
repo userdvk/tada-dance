@@ -1,5 +1,11 @@
 .wrapper {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.profileWrapper {
+  display: flex;
 }
 .photo {
   cursor: pointer;
@@ -24,7 +30,20 @@
   letter-spacing: 0.1px;
 }
 .notification {
-  margin-left: auto;
   margin-top: 16px;
   cursor: pointer;
+}
+
+@media (max-width: 1032px) {
+  .profileWrapper {
+    order: 1;
+  }
+  .notification {
+    order: 2;
+  }
+  .SearchWrap {
+    order: 3;
+    width: 100%;
+    margin: 32px auto;
+  }
 }

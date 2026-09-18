@@ -6,12 +6,9 @@
   border-radius: 12px; /* Закругленные углы */
   padding: 12px 16px; /* Внутренние отступы */
   width: 100%;
-  max-width: 400px; /* Ограничиваем ширину */
+  max-width: 100%; /* Ограничиваем ширину */
   box-sizing: border-box;
-  height: 60px;
-  margin-top: 32px;
 }
-
 .wrapper input {
   width: 376.55px;
   height: 40px;
@@ -40,42 +37,4 @@
 
 .search-container input::placeholder {
   color: #999;
-}
-
-.wrapperDesktop {
-  width: calc(100% - 32px);
-
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  background-color: #f5f5f5;
-  border-radius: 12px;
-  padding: 12px 16px;
-  max-width: 56%;
-  box-sizing: border-box;
-  height: 60px;
-}
-
-.wrapperDesktop input {
-  width: 376.55px;
-  height: 40px;
-  border: none; /* Убираем стандартную рамку */
-  background: transparent; /* Делаем фон прозрачным */
-  outline: none; /* Убираем синюю обводку при клике */
-  font-size: 18px;
-  color: #333;
-  flex-grow: 1; /* Заставляем input занять всё свободное место между иконками */
-  margin: 0 12px; /* Отступы от иконок */
-}
-
-@media (min-width: 1032px) {
-  .wrapper {
-    display: none;
-  }
-}
-
-@media (max-width: 1032px) {
-  .wrapperDesktop {
-    display: none;
-  }
 }

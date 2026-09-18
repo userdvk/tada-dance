@@ -1,7 +1,5 @@
 import RightSideCards from "../../components/features/RightSideCards/RightSideCards";
-
-import { Search } from "../../components/ui/Search/Search";
-import { Slider } from "../../components/ui/Search/Slider/Slider";
+import { Slider } from "../../components/ui/Slider/Slider";
 import cls from "./Dashboard.module.css";
 import { CategoriesSlider } from "../../components/features/CategoriesSlider/CategoriesSlider";
 import ContentWrapper from "../../components/layout/ContentWrapper/ContentWrapper";
@@ -11,8 +9,7 @@ export default function Dashboard() {
   const [activeCategory, setActiveCategory] = useState("All");
   return (
     <>
-      <div className={cls.wrap}>
-        <Search />
+      <main className={cls.wrap}>
         <Slider />
         <div className={cls.sidewrap}>
           <RightSideCards>
@@ -29,7 +26,7 @@ export default function Dashboard() {
             nostrum architecto, necessitatibus placeat doloribus in.
           </RightSideCards>
         </div>
-      </div>
+      </main>
 
       <ContentWrapper title="Categories">
         <CategoriesSlider

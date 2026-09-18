@@ -6,18 +6,22 @@ import cls from "./ProfileHeader.module.css";
 export default function ProfileHeader() {
   const location = useLocation();
   return (
-    <div className={cls.wrapper}>
-      <div className={cls.photo}>
-        <img src={Ellipse} />
+    <header className={cls.wrapper}>
+      <div className={cls.profileWrapper}>
+        <div className={cls.photo}>
+          <img src={Ellipse} />
+        </div>
+        <div className={cls.GreetingText}>
+          <p>Hi,Welcome Back,</p>
+          <span>Name</span>
+        </div>
       </div>
-      <div className={cls.GreetingText}>
-        <p>Hi,Welcome Back,</p>
-        <span>Name</span>
+      <div className={cls.SearchWrap}>
+        {location.pathname === "/dashboard" && <Search desktop />}
       </div>
-      {location.pathname === "/dashboard" && <Search desktop />}
       <div className={cls.notification}>
         <img src={Notification} />
       </div>
-    </div>
+    </header>
   );
 }
