@@ -6,7 +6,7 @@ import { TbMessageDots } from "react-icons/tb";
 
 import { NavLink } from "react-router-dom";
 
-export function LeftMenu() {
+export default function LeftMenu() {
   const navItem = [
     { path: "/dashboard", icon: <IoHomeOutline size={24} /> },
     { path: "/Appointment", icon: <IoMdTime size={24} /> },

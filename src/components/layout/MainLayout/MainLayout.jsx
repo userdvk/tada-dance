@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import MainContainer from "../MainContainer/MainContainer";
+import LeftMenu from "../../features/LeftMenu/leftMenu";
 
 export default function MainLayout() {
   return (
@@ -7,6 +8,7 @@ export default function MainLayout() {
       <div className="app-container">
         <MainContainer>
           <Outlet />
+          <LeftMenu />
         </MainContainer>
       </div>
     </div>
