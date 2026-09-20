@@ -6,7 +6,7 @@ import cls from "./ProfileHeader.module.css";
 export default function ProfileHeader() {
   const location = useLocation();
   return (
-    <header className={cls.wrapper}>
+    <header>
       <div className={cls.profileWrapper}>
         <div className={cls.photo}>
           <img src={Ellipse} />

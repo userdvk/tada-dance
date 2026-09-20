@@ -19,7 +19,7 @@
   text-align: center;
   letter-spacing: -0.02em;
 }
-.doctorTitle {
+.SectionHeader {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;

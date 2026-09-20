@@ -2,10 +2,9 @@ import cls from "./CategoriesSlider.module.css";
 export function CategoriesSlider({ setActiveCategory, activeCategory }) {
   const categories = [
     { id: "all", name: "All" },
-    { id: "dentist", name: "Dentist" },
-    { id: "therapist", name: "Therapist" },
-    { id: "surgeon", name: "Surgeon" },
-    { id: "cardiologist", name: "Cardiologist" },
+    { id: "childrenUnder 5", name: "children under 5" },
+    { id: "duet", name: "Duet" },
+    { id: "group", name: "Group" },
     { id: "surgeon2", name: "Street Dance" },
     { id: "dentist2", name: "Contemporary" },
   ];
@@ -14,7 +13,7 @@ export function CategoriesSlider({ setActiveCategory, activeCategory }) {
     setActiveCategory(cat.name);
   };
   return (
-    <div className={cls.wrap}>
+    <div className={cls.CategoriesSlider}>
       {categories.map((cat) => (
         <button
           className={`${cls.btn} ${activeCategory === cat.name ? cls.active : ""}`}

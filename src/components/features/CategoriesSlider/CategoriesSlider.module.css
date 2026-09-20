@@ -1,4 +1,4 @@
-.wrap {
+.CategoriesSlider {
   display: flex;
   gap: 15px;
   overflow-x: auto;
@@ -7,7 +7,7 @@
 }
 .btn {
   flex: 0 0 auto;
-  width: 149px;
+  width: 180px;
   height: 80px;
   border: none;
   background-color: #7bc1b7;

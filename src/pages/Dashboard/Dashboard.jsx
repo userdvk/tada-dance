@@ -9,7 +9,7 @@ export default function Dashboard() {
   const [activeCategory, setActiveCategory] = useState("All");
   return (
     <>
-      <main className={cls.wrap}>
+      <section>
         <Slider />
         <div className={cls.sidewrap}>
           <RightSideCards>
@@ -26,7 +26,7 @@ export default function Dashboard() {
             nostrum architecto, necessitatibus placeat doloribus in.
           </RightSideCards>
         </div>
-      </main>
+      </section>
 
       <SectionHeader title="Categories">
         <CategoriesSlider
@@ -34,6 +34,8 @@ export default function Dashboard() {
           activeCategory={activeCategory}
         />
       </SectionHeader>
+
+      <SectionHeader title="Members"></SectionHeader>
     </>
   );
 }

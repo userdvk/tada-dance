@@ -1,4 +1,4 @@
-.wrap {
+section {
   display: flex;
   gap: 30px;
 }
@@ -8,14 +8,14 @@
   flex-direction: column;
 }
 @media (max-width: 1032px) {
-  .wrap {
+  section {
     flex-direction: column;
     display: flex;
   }
 }
 
 @media (min-width: 1032px) {
-  .wrap {
+  section {
     align-items: center;
   }
 }
