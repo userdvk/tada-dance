@@ -10,7 +10,7 @@
   width: 180px;
   height: 80px;
   border: none;
-  background-color: #7bc1b7;
+  background-color: #16a085;
   color: #fff;
   font-size: 20px;
   border-radius: 10px;
@@ -21,5 +21,5 @@
   line-height: 100%;
 }
 .active {
-  background-color: #509489;
+  background-color: #1abc9c;
 }

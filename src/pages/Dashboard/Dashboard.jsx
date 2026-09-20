@@ -25,6 +25,12 @@ export default function Dashboard() {
             alias ex nostrum molestiae quisquam. Veniam expedita distinctio
             nostrum architecto, necessitatibus placeat doloribus in.
           </RightSideCards>
+          <RightSideCards>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+            consequatur, aliquam voluptatibus quo eaque voluptates, excepturi
+            alias ex nostrum molestiae quisquam. Veniam expedita distinctio
+            nostrum architecto, necessitatibus placeat doloribus in.
+          </RightSideCards>
         </div>
       </section>
 

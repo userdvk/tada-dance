@@ -1,5 +1,6 @@
 import cls from "./Slider.module.css";
 import slider from "../../../assets/slider.png";
+import slider2 from "../../../assets/slider2.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Стили Swiper
@@ -20,7 +21,7 @@ export function Slider() {
         }}
       >
         <SwiperSlide>
-          <img src={slider} />
+          <img src={slider2} />
         </SwiperSlide>
         <SwiperSlide>
           <img src={slider} />
